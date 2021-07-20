@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'date-container',
+  selector: 'app-date-container',
   templateUrl: './date-container.component.html',
   styleUrls: ['./date-container.component.css']
 })
@@ -10,7 +10,7 @@ export class DateContainerComponent {
     totalDays: 30
   };
 
-  dates(totalDays) {
+  dates(totalDays: number) {
     return new Array(totalDays);
   }
 }
